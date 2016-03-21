@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="resources/js/angular.min.js"></script>
+<title>AngularJS Study</title>
+
+<script type="text/javascript">
+var myApp = angular.module('myApp', []);
+
+myApp.controller('MainCtrl', ['$scope', function ($scope) {
+    
+    $scope.text = 'Hello, Angular fanatic.';
+    
+}]);
+</script>
+</head>
+<body>
+<div ng-app="myApp">
+    <div ng-controller="MainCtrl">
+        {{ text }}
+    </div>
+</div>
+</body>
+</html>
